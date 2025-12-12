@@ -1,5 +1,9 @@
+[build-system]
+requires = ["uv-build>=0.2"]
+build-backend = "uv_build"
+
 [project]
-name = "ai-trading-demo"
+name = "ai_trader"
 version = "0.1.0"
 description = "A demonstration Jupyter notebook that showcases how AI models can analyze stock market data, detect patterns, and build a simple educational trading-bot workflow."
 authors = [
@@ -16,12 +20,5 @@ dependencies = [
     "matplotlib",
     "scikit-learn",
     "jupyter",
+    "pyarrow"
 ]
-
-[tool.uv]
-# Optional: pin Python version for reproducibility
-python = "3.10"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
